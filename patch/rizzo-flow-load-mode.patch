@@ -1,0 +1,15 @@
+diff --git a/src/rizzo_flow/llama_cpp.py b/src/rizzo_flow/llama_cpp.py
+index 123b46d..14d9b27 100644
+--- a/src/rizzo_flow/llama_cpp.py
++++ b/src/rizzo_flow/llama_cpp.py
+@@ -363,6 +363,10 @@ class Session:
+         model_params.devices = targets
+         model_params.split_mode = SPLIT_MODE_NONE
+         model_params.n_gpu_layers = GPU_LAYERS if chosen else 0
++        # Jetson and other integrated GPUs: with mmap the GGUF takes RAM twice (page
++        # cache + GPU copy) and cudaMalloc fails. RIZZO_LLAMA_LOAD_MODE=4 uses direct I/O.
++        if os.environ.get("RIZZO_LLAMA_LOAD_MODE"):
++            model_params.load_mode = int(os.environ["RIZZO_LLAMA_LOAD_MODE"])
+         model = library.llama_model_load_from_file(str(gguf).encode(), model_params)
+         if not model:
+             raise ValueError(f"llama.cpp cannot load {gguf}")

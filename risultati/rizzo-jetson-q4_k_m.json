@@ -1,0 +1,2211 @@
+{
+ "data": "2026-10-12T08:19:51+00:00",
+ "motore": "rizzo-flow",
+ "modello": {
+  "source": "XHToken/Spark-X2.5-4B",
+  "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+  "gguf_source": "rizzoaiacademy/rizzo-flow",
+  "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+  "source_files": {
+   "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+  },
+  "precision": "q4_k_m",
+  "device": "gpu",
+  "backend": "cuda",
+  "runtime": "llama.cpp",
+  "llama_cpp_release": "b11081",
+  "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+  "prompt_version": "spark-decisions-v3",
+  "weights": "flow",
+  "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+  "device_name": "Orin",
+  "context_cells": 3072,
+  "load_seconds": 64.72929844300961
+ },
+ "riepilogo": {
+  "richieste": 40,
+  "decisioni": 120,
+  "accuratezza_reparto": 1.0,
+  "accuratezza_tipo": 0.875,
+  "accuratezza_urgente": 0.875,
+  "tutte_e_tre_giuste": 0.775,
+  "ms_per_richiesta_p50": 1043.9,
+  "ms_per_richiesta_p95": 1067.7,
+  "decisioni_al_secondo": 2.86,
+  "token_generati_totali": 0,
+  "errori": [
+   "R07 urgente: atteso False, dato True",
+   "R08 tipo: atteso domanda, dato richiesta",
+   "R14 tipo: atteso guasto, dato richiesta",
+   "R14 urgente: atteso True, dato False",
+   "R21 urgente: atteso True, dato False",
+   "R26 urgente: atteso True, dato False",
+   "R27 tipo: atteso domanda, dato richiesta",
+   "R30 tipo: atteso guasto, dato richiesta",
+   "R33 urgente: atteso True, dato False",
+   "R35 tipo: atteso guasto, dato richiesta"
+  ]
+ },
+ "righe": [
+  {
+   "id": "R01",
+   "atteso": {
+    "reparto": "salesforce",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "predetto": {
+    "reparto": "salesforce",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "ms": 1125.8103449945338,
+   "confidenza": {
+    "reparto": 0.9921007206646802,
+    "tipo": 0.9560881859153307,
+    "urgente": 0.890367423097831
+   },
+   "timing": {
+    "inference_seconds": 1.0424912999733351,
+    "prefill_seconds": 0.37303862103726715,
+    "shared_prefix_tokens": 168,
+    "evaluated_tokens_including_padding": 527,
+    "logical_input_tokens": 863,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2673090560,
+    "queue_seconds": 5.984969902783632e-06,
+    "compile_seconds": 0.07714950601803139,
+    "total_seconds": 1.1201768559985794
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R02",
+   "atteso": {
+    "reparto": "salesforce",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "salesforce",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1053.9366790326312,
+   "confidenza": {
+    "reparto": 0.9802849174643019,
+    "tipo": 0.9972167911649439,
+    "urgente": 0.9352631401092998
+   },
+   "timing": {
+    "inference_seconds": 0.9755479979794472,
+    "prefill_seconds": 0.32335132401203737,
+    "shared_prefix_tokens": 153,
+    "evaluated_tokens_including_padding": 512,
+    "logical_input_tokens": 818,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2673119232,
+    "queue_seconds": 3.456021659076214e-06,
+    "compile_seconds": 0.07214675599243492,
+    "total_seconds": 1.0481473120162264
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R03",
+   "atteso": {
+    "reparto": "salesforce",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "salesforce",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "ms": 1036.067885986995,
+   "confidenza": {
+    "reparto": 0.9965429463984081,
+    "tipo": 0.8879872620603235,
+    "urgente": 0.9072307301491578
+   },
+   "timing": {
+    "inference_seconds": 0.964384280028753,
+    "prefill_seconds": 0.3180453300010413,
+    "shared_prefix_tokens": 143,
+    "evaluated_tokens_including_padding": 502,
+    "logical_input_tokens": 788,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2675183616,
+    "queue_seconds": 3.263994585722685e-06,
+    "compile_seconds": 0.0649910420179367,
+    "total_seconds": 1.0299497399828397
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R04",
+   "atteso": {
+    "reparto": "salesforce",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "salesforce",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1037.01379802078,
+   "confidenza": {
+    "reparto": 0.9910320149017726,
+    "tipo": 0.9481967036221556,
+    "urgente": 0.7642172412958829
+   },
+   "timing": {
+    "inference_seconds": 0.9562044329941273,
+    "prefill_seconds": 0.3230982560198754,
+    "shared_prefix_tokens": 148,
+    "evaluated_tokens_including_padding": 507,
+    "logical_input_tokens": 803,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2675183616,
+    "queue_seconds": 2.1120067685842514e-06,
+    "compile_seconds": 0.07458753697574139,
+    "total_seconds": 1.0312868970213458
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R05",
+   "atteso": {
+    "reparto": "salesforce",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "predetto": {
+    "reparto": "salesforce",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "ms": 1056.0719930217601,
+   "confidenza": {
+    "reparto": 0.9918434331404227,
+    "tipo": 0.7968785798837517,
+    "urgente": 0.6867813120446989
+   },
+   "timing": {
+    "inference_seconds": 0.9748987759812735,
+    "prefill_seconds": 0.32627361797494814,
+    "shared_prefix_tokens": 160,
+    "evaluated_tokens_including_padding": 519,
+    "logical_input_tokens": 839,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2675183616,
+    "queue_seconds": 3.872031811624765e-06,
+    "compile_seconds": 0.07492837897734717,
+    "total_seconds": 1.0502638739999384
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R06",
+   "atteso": {
+    "reparto": "salesforce",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "salesforce",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "ms": 1067.6874250057153,
+   "confidenza": {
+    "reparto": 0.9534867114876512,
+    "tipo": 0.8672318472548637,
+    "urgente": 0.9401958544632875
+   },
+   "timing": {
+    "inference_seconds": 0.9893753869691864,
+    "prefill_seconds": 0.3345810460159555,
+    "shared_prefix_tokens": 160,
+    "evaluated_tokens_including_padding": 519,
+    "logical_input_tokens": 839,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2675183616,
+    "queue_seconds": 3.5199918784201145e-06,
+    "compile_seconds": 0.0720017270068638,
+    "total_seconds": 1.0618113359669223
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R07",
+   "atteso": {
+    "reparto": "salesforce",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "salesforce",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "ms": 1037.929009005893,
+   "confidenza": {
+    "reparto": 0.9263985461618965,
+    "tipo": 0.9268289089802473,
+    "urgente": 0.5761075394338391
+   },
+   "timing": {
+    "inference_seconds": 0.9617214860045351,
+    "prefill_seconds": 0.32369868498062715,
+    "shared_prefix_tokens": 151,
+    "evaluated_tokens_including_padding": 510,
+    "logical_input_tokens": 812,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2675183616,
+    "queue_seconds": 3.0400115065276623e-06,
+    "compile_seconds": 0.06940993299940601,
+    "total_seconds": 1.0316954359877855
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R08",
+   "atteso": {
+    "reparto": "salesforce",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "salesforce",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1053.3331050537527,
+   "confidenza": {
+    "reparto": 0.9797464421279999,
+    "tipo": 0.5054407325848699,
+    "urgente": 0.6020173477690051
+   },
+   "timing": {
+    "inference_seconds": 0.9738933519693092,
+    "prefill_seconds": 0.31764335703337565,
+    "shared_prefix_tokens": 138,
+    "evaluated_tokens_including_padding": 497,
+    "logical_input_tokens": 773,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2675671040,
+    "queue_seconds": 1.9519939087331295e-06,
+    "compile_seconds": 0.07248714898014441,
+    "total_seconds": 1.0470028889831156
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R09",
+   "atteso": {
+    "reparto": "salesforce",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "salesforce",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1034.6593580325134,
+   "confidenza": {
+    "reparto": 0.9888106896182702,
+    "tipo": 0.994923740148107,
+    "urgente": 0.866759034407937
+   },
+   "timing": {
+    "inference_seconds": 0.9541469010291621,
+    "prefill_seconds": 0.3197466859710403,
+    "shared_prefix_tokens": 140,
+    "evaluated_tokens_including_padding": 499,
+    "logical_input_tokens": 779,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2675671040,
+    "queue_seconds": 3.6800047382712364e-06,
+    "compile_seconds": 0.07416339300107211,
+    "total_seconds": 1.0288224700489081
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R10",
+   "atteso": {
+    "reparto": "salesforce",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "predetto": {
+    "reparto": "salesforce",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "ms": 1043.0626570014283,
+   "confidenza": {
+    "reparto": 0.9807174354853632,
+    "tipo": 0.9796600674543231,
+    "urgente": 0.9085222163157708
+   },
+   "timing": {
+    "inference_seconds": 0.9634686929639429,
+    "prefill_seconds": 0.3235788360470906,
+    "shared_prefix_tokens": 149,
+    "evaluated_tokens_including_padding": 508,
+    "logical_input_tokens": 806,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2675900416,
+    "queue_seconds": 3.936002030968666e-06,
+    "compile_seconds": 0.07318573002703488,
+    "total_seconds": 1.0371824399917386
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R11",
+   "atteso": {
+    "reparto": "m365",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "predetto": {
+    "reparto": "m365",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "ms": 1087.1704089804552,
+   "confidenza": {
+    "reparto": 0.9906436216088065,
+    "tipo": 0.9282838202971609,
+    "urgente": 0.8005907945012674
+   },
+   "timing": {
+    "inference_seconds": 1.0086734400247224,
+    "prefill_seconds": 0.36353138799313456,
+    "shared_prefix_tokens": 180,
+    "evaluated_tokens_including_padding": 539,
+    "logical_input_tokens": 899,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2675900416,
+    "queue_seconds": 3.743974957615137e-06,
+    "compile_seconds": 0.07224979600869119,
+    "total_seconds": 1.0814520840067416
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R12",
+   "atteso": {
+    "reparto": "m365",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "m365",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1048.5405779909343,
+   "confidenza": {
+    "reparto": 0.9871225528687226,
+    "tipo": 0.9532781326537398,
+    "urgente": 0.7420278237315365
+   },
+   "timing": {
+    "inference_seconds": 0.9718375860247761,
+    "prefill_seconds": 0.3232042290037498,
+    "shared_prefix_tokens": 147,
+    "evaluated_tokens_including_padding": 506,
+    "logical_input_tokens": 800,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2676387840,
+    "queue_seconds": 3.5199918784201145e-06,
+    "compile_seconds": 0.069994012999814,
+    "total_seconds": 1.0425699580227956
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R13",
+   "atteso": {
+    "reparto": "m365",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "m365",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "ms": 1057.250605954323,
+   "confidenza": {
+    "reparto": 0.9975357750916205,
+    "tipo": 0.5946295984027482,
+    "urgente": 0.8611254991123397
+   },
+   "timing": {
+    "inference_seconds": 0.9798312400234863,
+    "prefill_seconds": 0.3204833730123937,
+    "shared_prefix_tokens": 143,
+    "evaluated_tokens_including_padding": 502,
+    "logical_input_tokens": 788,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2676391936,
+    "queue_seconds": 3.5520060919225216e-06,
+    "compile_seconds": 0.06991660199128091,
+    "total_seconds": 1.0505034499801695
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R14",
+   "atteso": {
+    "reparto": "m365",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "predetto": {
+    "reparto": "m365",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1058.3937399787828,
+   "confidenza": {
+    "reparto": 0.9757969781821655,
+    "tipo": 0.7577123293923289,
+    "urgente": 0.5807638785668576
+   },
+   "timing": {
+    "inference_seconds": 0.9813971709809266,
+    "prefill_seconds": 0.328001847025007,
+    "shared_prefix_tokens": 158,
+    "evaluated_tokens_including_padding": 517,
+    "logical_input_tokens": 833,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2676391936,
+    "queue_seconds": 3.4559634514153004e-06,
+    "compile_seconds": 0.06991797703085467,
+    "total_seconds": 1.052258538955357
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R15",
+   "atteso": {
+    "reparto": "m365",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "m365",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1042.0542120118625,
+   "confidenza": {
+    "reparto": 0.9906534064997272,
+    "tipo": 0.9827322095047281,
+    "urgente": 0.9220931693606492
+   },
+   "timing": {
+    "inference_seconds": 0.9625731169944629,
+    "prefill_seconds": 0.3152804530109279,
+    "shared_prefix_tokens": 138,
+    "evaluated_tokens_including_padding": 497,
+    "logical_input_tokens": 773,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2676391936,
+    "queue_seconds": 2.1120067685842514e-06,
+    "compile_seconds": 0.07343594398116693,
+    "total_seconds": 1.036517910019029
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R16",
+   "atteso": {
+    "reparto": "m365",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "predetto": {
+    "reparto": "m365",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "ms": 1052.978101943154,
+   "confidenza": {
+    "reparto": 0.9868350893649437,
+    "tipo": 0.9550055428033721,
+    "urgente": 0.8540051287817546
+   },
+   "timing": {
+    "inference_seconds": 0.9718031939701177,
+    "prefill_seconds": 0.32687089598039165,
+    "shared_prefix_tokens": 157,
+    "evaluated_tokens_including_padding": 516,
+    "logical_input_tokens": 830,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2676391936,
+    "queue_seconds": 3.4240074455738068e-06,
+    "compile_seconds": 0.07453760999487713,
+    "total_seconds": 1.0468471570056863
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R17",
+   "atteso": {
+    "reparto": "m365",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "m365",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "ms": 1040.8104170346633,
+   "confidenza": {
+    "reparto": 0.9922698063219257,
+    "tipo": 0.7876574645826722,
+    "urgente": 0.9087593908520316
+   },
+   "timing": {
+    "inference_seconds": 0.9610347870038822,
+    "prefill_seconds": 0.31983384100021794,
+    "shared_prefix_tokens": 140,
+    "evaluated_tokens_including_padding": 499,
+    "logical_input_tokens": 779,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2676391936,
+    "queue_seconds": 3.3919932320713997e-06,
+    "compile_seconds": 0.0732578249881044,
+    "total_seconds": 1.03483400499681
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R18",
+   "atteso": {
+    "reparto": "m365",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "m365",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1048.9555629901588,
+   "confidenza": {
+    "reparto": 0.9943530535998902,
+    "tipo": 0.9204590266703132,
+    "urgente": 0.8499270096874598
+   },
+   "timing": {
+    "inference_seconds": 0.9699512220104225,
+    "prefill_seconds": 0.32108587899710983,
+    "shared_prefix_tokens": 142,
+    "evaluated_tokens_including_padding": 501,
+    "logical_input_tokens": 785,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2676391936,
+    "queue_seconds": 2.1120067685842514e-06,
+    "compile_seconds": 0.07186869397992268,
+    "total_seconds": 1.0423892769613303
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R19",
+   "atteso": {
+    "reparto": "m365",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "m365",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "ms": 1042.0076919835992,
+   "confidenza": {
+    "reparto": 0.9899770742035718,
+    "tipo": 0.5483079130263256,
+    "urgente": 0.8928294946978994
+   },
+   "timing": {
+    "inference_seconds": 0.9591731500113383,
+    "prefill_seconds": 0.3236251570051536,
+    "shared_prefix_tokens": 149,
+    "evaluated_tokens_including_padding": 508,
+    "logical_input_tokens": 806,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2676391936,
+    "queue_seconds": 3.5520060919225216e-06,
+    "compile_seconds": 0.07627824001247063,
+    "total_seconds": 1.035983181966003
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R20",
+   "atteso": {
+    "reparto": "m365",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "m365",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "ms": 1034.7324169706553,
+   "confidenza": {
+    "reparto": 0.9947226824104356,
+    "tipo": 0.9406886131875883,
+    "urgente": 0.875773290223322
+   },
+   "timing": {
+    "inference_seconds": 0.9559926920337602,
+    "prefill_seconds": 0.3172257209662348,
+    "shared_prefix_tokens": 136,
+    "evaluated_tokens_including_padding": 495,
+    "logical_input_tokens": 767,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2676391936,
+    "queue_seconds": 1.9840081222355366e-06,
+    "compile_seconds": 0.07286613195901737,
+    "total_seconds": 1.029375383979641
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R21",
+   "atteso": {
+    "reparto": "report",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "predetto": {
+    "reparto": "report",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "ms": 1051.217985979747,
+   "confidenza": {
+    "reparto": 0.9731305486486828,
+    "tipo": 0.897836914143171,
+    "urgente": 0.549893552063116
+   },
+   "timing": {
+    "inference_seconds": 0.9703648190479726,
+    "prefill_seconds": 0.3255764470086433,
+    "shared_prefix_tokens": 154,
+    "evaluated_tokens_including_padding": 513,
+    "logical_input_tokens": 821,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2676391936,
+    "queue_seconds": 3.2959505915641785e-06,
+    "compile_seconds": 0.07379457703791559,
+    "total_seconds": 1.0447976879659109
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R22",
+   "atteso": {
+    "reparto": "report",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "report",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1039.0181719558313,
+   "confidenza": {
+    "reparto": 0.9782867088599309,
+    "tipo": 0.985891363329285,
+    "urgente": 0.7260732945784547
+   },
+   "timing": {
+    "inference_seconds": 0.9587074869778007,
+    "prefill_seconds": 0.31917608401272446,
+    "shared_prefix_tokens": 138,
+    "evaluated_tokens_including_padding": 497,
+    "logical_input_tokens": 773,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2676391936,
+    "queue_seconds": 3.0720257200300694e-06,
+    "compile_seconds": 0.07378468796378002,
+    "total_seconds": 1.0330130869988352
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R23",
+   "atteso": {
+    "reparto": "report",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "report",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "ms": 1056.7326429882087,
+   "confidenza": {
+    "reparto": 0.9796325582995994,
+    "tipo": 0.9519772056649469,
+    "urgente": 0.8620725654643611
+   },
+   "timing": {
+    "inference_seconds": 0.9747255219845101,
+    "prefill_seconds": 0.31991133803967386,
+    "shared_prefix_tokens": 140,
+    "evaluated_tokens_including_padding": 499,
+    "logical_input_tokens": 779,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2676391936,
+    "queue_seconds": 3.71196074411273e-06,
+    "compile_seconds": 0.07479284703731537,
+    "total_seconds": 1.0500401449971832
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R24",
+   "atteso": {
+    "reparto": "report",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "report",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "ms": 1033.7438199785538,
+   "confidenza": {
+    "reparto": 0.8895109140081221,
+    "tipo": 0.9117998228733962,
+    "urgente": 0.8717915693094967
+   },
+   "timing": {
+    "inference_seconds": 0.9518389729782939,
+    "prefill_seconds": 0.3177766450098716,
+    "shared_prefix_tokens": 135,
+    "evaluated_tokens_including_padding": 494,
+    "logical_input_tokens": 764,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2676609024,
+    "queue_seconds": 3.5520060919225216e-06,
+    "compile_seconds": 0.07509800902334973,
+    "total_seconds": 1.0276591800502501
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R25",
+   "atteso": {
+    "reparto": "report",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "report",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1038.9359770342708,
+   "confidenza": {
+    "reparto": 0.9971755318843607,
+    "tipo": 0.6808474400402668,
+    "urgente": 0.754799770587474
+   },
+   "timing": {
+    "inference_seconds": 0.9566196940140799,
+    "prefill_seconds": 0.32276700797956437,
+    "shared_prefix_tokens": 147,
+    "evaluated_tokens_including_padding": 506,
+    "logical_input_tokens": 800,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2676609024,
+    "queue_seconds": 3.071967512369156e-06,
+    "compile_seconds": 0.07594097900437191,
+    "total_seconds": 1.0331110900151543
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R26",
+   "atteso": {
+    "reparto": "report",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "predetto": {
+    "reparto": "report",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "ms": 1054.9400260206312,
+   "confidenza": {
+    "reparto": 0.9941658451232884,
+    "tipo": 0.9726997559246525,
+    "urgente": 0.609630808965463
+   },
+   "timing": {
+    "inference_seconds": 0.9721567209926434,
+    "prefill_seconds": 0.32711987901711836,
+    "shared_prefix_tokens": 157,
+    "evaluated_tokens_including_padding": 516,
+    "logical_input_tokens": 830,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2676609024,
+    "queue_seconds": 3.4879776649177074e-06,
+    "compile_seconds": 0.07621884299442172,
+    "total_seconds": 1.0491245799930766
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R27",
+   "atteso": {
+    "reparto": "report",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "report",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1044.6409760043025,
+   "confidenza": {
+    "reparto": 0.9750237120815078,
+    "tipo": 0.49676213055207946,
+    "urgente": 0.9054579097858555
+   },
+   "timing": {
+    "inference_seconds": 0.9640678529976867,
+    "prefill_seconds": 0.32120906695490703,
+    "shared_prefix_tokens": 145,
+    "evaluated_tokens_including_padding": 504,
+    "logical_input_tokens": 794,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2676609024,
+    "queue_seconds": 2.368004061281681e-06,
+    "compile_seconds": 0.07417074602562934,
+    "total_seconds": 1.0387685680179857
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R28",
+   "atteso": {
+    "reparto": "report",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "report",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1060.6502100126818,
+   "confidenza": {
+    "reparto": 0.769397862457042,
+    "tipo": 0.9650355728574014,
+    "urgente": 0.786638941360403
+   },
+   "timing": {
+    "inference_seconds": 0.9821338230394758,
+    "prefill_seconds": 0.3265034400392324,
+    "shared_prefix_tokens": 145,
+    "evaluated_tokens_including_padding": 504,
+    "logical_input_tokens": 794,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2676609024,
+    "queue_seconds": 2.400018274784088e-06,
+    "compile_seconds": 0.07197496498702094,
+    "total_seconds": 1.0546022760099731
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R29",
+   "atteso": {
+    "reparto": "report",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "predetto": {
+    "reparto": "report",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "ms": 1057.7831380069256,
+   "confidenza": {
+    "reparto": 0.7062121353739418,
+    "tipo": 0.9709061464853311,
+    "urgente": 0.5767487151910579
+   },
+   "timing": {
+    "inference_seconds": 0.9707976860227063,
+    "prefill_seconds": 0.3260494400165044,
+    "shared_prefix_tokens": 157,
+    "evaluated_tokens_including_padding": 516,
+    "logical_input_tokens": 830,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2676609024,
+    "queue_seconds": 3.263994585722685e-06,
+    "compile_seconds": 0.07825820200378075,
+    "total_seconds": 1.0495514870272018
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R30",
+   "atteso": {
+    "reparto": "report",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "report",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1039.3765709595755,
+   "confidenza": {
+    "reparto": 0.9778626508341576,
+    "tipo": 0.7560903942840467,
+    "urgente": 0.8755958652309059
+   },
+   "timing": {
+    "inference_seconds": 0.9586555080022663,
+    "prefill_seconds": 0.3173708620015532,
+    "shared_prefix_tokens": 139,
+    "evaluated_tokens_including_padding": 498,
+    "logical_input_tokens": 776,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2676862976,
+    "queue_seconds": 3.5850098356604576e-06,
+    "compile_seconds": 0.07407298200996593,
+    "total_seconds": 1.0332167620072141
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R31",
+   "atteso": {
+    "reparto": "it",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "predetto": {
+    "reparto": "it",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "ms": 1047.2847810015082,
+   "confidenza": {
+    "reparto": 0.9839977210809269,
+    "tipo": 0.9679116065866562,
+    "urgente": 0.9125049688238673
+   },
+   "timing": {
+    "inference_seconds": 0.9666835630196147,
+    "prefill_seconds": 0.3177521519828588,
+    "shared_prefix_tokens": 137,
+    "evaluated_tokens_including_padding": 496,
+    "logical_input_tokens": 770,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2676862976,
+    "queue_seconds": 2.3040338419377804e-06,
+    "compile_seconds": 0.07445318601094186,
+    "total_seconds": 1.041650812025182
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R32",
+   "atteso": {
+    "reparto": "it",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "it",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1029.6339810010977,
+   "confidenza": {
+    "reparto": 0.9822283297538292,
+    "tipo": 0.8788799506210534,
+    "urgente": 0.7890076053856857
+   },
+   "timing": {
+    "inference_seconds": 0.9496835360187106,
+    "prefill_seconds": 0.3158076409599744,
+    "shared_prefix_tokens": 130,
+    "evaluated_tokens_including_padding": 489,
+    "logical_input_tokens": 749,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2679947264,
+    "queue_seconds": 3.6479905247688293e-06,
+    "compile_seconds": 0.0733683190192096,
+    "total_seconds": 1.0235758710186929
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R33",
+   "atteso": {
+    "reparto": "it",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "predetto": {
+    "reparto": "it",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "ms": 1042.1595849911682,
+   "confidenza": {
+    "reparto": 0.9962066451289905,
+    "tipo": 0.9583838866543908,
+    "urgente": 0.5222449285435782
+   },
+   "timing": {
+    "inference_seconds": 0.95841542101698,
+    "prefill_seconds": 0.32469316601054743,
+    "shared_prefix_tokens": 153,
+    "evaluated_tokens_including_padding": 512,
+    "logical_input_tokens": 818,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2679947264,
+    "queue_seconds": 1.920037902891636e-06,
+    "compile_seconds": 0.07790186896454543,
+    "total_seconds": 1.0368357700062916
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R34",
+   "atteso": {
+    "reparto": "it",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "it",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "ms": 1028.119906957727,
+   "confidenza": {
+    "reparto": 0.9767179107247559,
+    "tipo": 0.7404872195083192,
+    "urgente": 0.7968762974939398
+   },
+   "timing": {
+    "inference_seconds": 0.9485531219979748,
+    "prefill_seconds": 0.3144132570014335,
+    "shared_prefix_tokens": 129,
+    "evaluated_tokens_including_padding": 488,
+    "logical_input_tokens": 746,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2679947264,
+    "queue_seconds": 3.6479905247688293e-06,
+    "compile_seconds": 0.0728060610126704,
+    "total_seconds": 1.0221617359784432
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R35",
+   "atteso": {
+    "reparto": "it",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "it",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1030.7730410131626,
+   "confidenza": {
+    "reparto": 0.9731229994609056,
+    "tipo": 0.37257839588788744,
+    "urgente": 0.798928099039526
+   },
+   "timing": {
+    "inference_seconds": 0.9517265930189751,
+    "prefill_seconds": 0.3184966479893774,
+    "shared_prefix_tokens": 138,
+    "evaluated_tokens_including_padding": 497,
+    "logical_input_tokens": 773,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2679947264,
+    "queue_seconds": 3.743974957615137e-06,
+    "compile_seconds": 0.07239468704210594,
+    "total_seconds": 1.024652016989421
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R36",
+   "atteso": {
+    "reparto": "it",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "it",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1040.6999069964513,
+   "confidenza": {
+    "reparto": 0.9905062500767997,
+    "tipo": 0.9357924801669738,
+    "urgente": 0.8451479910057171
+   },
+   "timing": {
+    "inference_seconds": 0.9529982749954797,
+    "prefill_seconds": 0.3194213790120557,
+    "shared_prefix_tokens": 140,
+    "evaluated_tokens_including_padding": 499,
+    "logical_input_tokens": 779,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2680193024,
+    "queue_seconds": 3.5209814086556435e-06,
+    "compile_seconds": 0.08068301103776321,
+    "total_seconds": 1.0342698500026017
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R37",
+   "atteso": {
+    "reparto": "it",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "predetto": {
+    "reparto": "it",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "ms": 1056.7413329845294,
+   "confidenza": {
+    "reparto": 0.9910970875278339,
+    "tipo": 0.9385240924030869,
+    "urgente": 0.8791084484791707
+   },
+   "timing": {
+    "inference_seconds": 0.9749172939918935,
+    "prefill_seconds": 0.3264367019874044,
+    "shared_prefix_tokens": 157,
+    "evaluated_tokens_including_padding": 516,
+    "logical_input_tokens": 830,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2680193024,
+    "queue_seconds": 2.368004061281681e-06,
+    "compile_seconds": 0.07597806298872456,
+    "total_seconds": 1.0514044290175661
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R38",
+   "atteso": {
+    "reparto": "it",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "it",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "ms": 1033.5414960281923,
+   "confidenza": {
+    "reparto": 0.9801792153831764,
+    "tipo": 0.4471722409319613,
+    "urgente": 0.8674997789080845
+   },
+   "timing": {
+    "inference_seconds": 0.9563317470019683,
+    "prefill_seconds": 0.3179456819780171,
+    "shared_prefix_tokens": 137,
+    "evaluated_tokens_including_padding": 496,
+    "logical_input_tokens": 770,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2680193024,
+    "queue_seconds": 1.728010829538107e-06,
+    "compile_seconds": 0.07106331596150994,
+    "total_seconds": 1.0279203910031356
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R39",
+   "atteso": {
+    "reparto": "it",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "it",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "ms": 1044.7652660077438,
+   "confidenza": {
+    "reparto": 0.9790182157441085,
+    "tipo": 0.9384802199075721,
+    "urgente": 0.7643290705218039
+   },
+   "timing": {
+    "inference_seconds": 0.9683867760468274,
+    "prefill_seconds": 0.31670756096718833,
+    "shared_prefix_tokens": 132,
+    "evaluated_tokens_including_padding": 491,
+    "logical_input_tokens": 755,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2680193024,
+    "queue_seconds": 2.6879715733230114e-06,
+    "compile_seconds": 0.06973492202814668,
+    "total_seconds": 1.038782934017945
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  },
+  {
+   "id": "R40",
+   "atteso": {
+    "reparto": "it",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "it",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1026.6095560509712,
+   "confidenza": {
+    "reparto": 0.9841927783695861,
+    "tipo": 0.9394321615091737,
+    "urgente": 0.7590385343311707
+   },
+   "timing": {
+    "inference_seconds": 0.947809420991689,
+    "prefill_seconds": 0.31327708397293463,
+    "shared_prefix_tokens": 136,
+    "evaluated_tokens_including_padding": 495,
+    "logical_input_tokens": 767,
+    "batches": 1,
+    "generated_tokens": 0,
+    "peak_device_bytes": 2680193024,
+    "queue_seconds": 2.2720196284353733e-06,
+    "compile_seconds": 0.07196724798996001,
+    "total_seconds": 1.0202676600310951
+   },
+   "token_generati": 0,
+   "modello": {
+    "source": "XHToken/Spark-X2.5-4B",
+    "requested_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "gguf_source": "rizzoaiacademy/rizzo-flow",
+    "gguf_revision": "55633c8cbd2b826bd3eefdeb05310450996649df",
+    "source_files": {
+     "spark-x2.5-4b-rizzo-flow-lora-q4_k_m.gguf": "79de5cb8dbfd1a1f5cb3037252251594352841fe5e3dc1ae8cead053010fcd54"
+    },
+    "precision": "q4_k_m",
+    "device": "gpu",
+    "backend": "cuda",
+    "runtime": "llama.cpp",
+    "llama_cpp_release": "b11081",
+    "llama_cpp_commit": "161755f29e415e2c33efe906e91843c068efd664",
+    "prompt_version": "spark-decisions-v3",
+    "weights": "flow",
+    "fingerprint": "f315a4dabd3d071d2de2c4738d86dcc2e2d74f3c49e6959131115c5dae028d0d",
+    "device_name": "Orin",
+    "context_cells": 3072,
+    "load_seconds": 64.72929844300961
+   }
+  }
+ ]
+}

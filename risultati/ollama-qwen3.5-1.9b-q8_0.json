@@ -1,0 +1,671 @@
+{
+ "data": "2026-10-12T08:22:16+00:00",
+ "motore": "ollama",
+ "modello": "qwen3.5-1.9b-q8_0",
+ "riepilogo": {
+  "richieste": 40,
+  "decisioni": 120,
+  "accuratezza_reparto": 1.0,
+  "accuratezza_tipo": 0.775,
+  "accuratezza_urgente": 0.975,
+  "tutte_e_tre_giuste": 0.75,
+  "ms_per_richiesta_p50": 1457.2,
+  "ms_per_richiesta_p95": 1587.4,
+  "decisioni_al_secondo": 2.05,
+  "token_generati_totali": 1180,
+  "errori": [
+   "R03 tipo: atteso domanda, dato richiesta",
+   "R06 tipo: atteso guasto, dato domanda",
+   "R07 urgente: atteso False, dato True",
+   "R08 tipo: atteso domanda, dato richiesta",
+   "R13 tipo: atteso domanda, dato richiesta",
+   "R19 tipo: atteso guasto, dato domanda",
+   "R22 tipo: atteso richiesta, dato domanda",
+   "R25 tipo: atteso richiesta, dato domanda",
+   "R30 tipo: atteso guasto, dato domanda",
+   "R36 tipo: atteso richiesta, dato guasto"
+  ]
+ },
+ "righe": [
+  {
+   "id": "R01",
+   "atteso": {
+    "reparto": "salesforce",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "predetto": {
+    "reparto": "salesforce",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "ms": 1351.7048249486834,
+   "token_generati": 31,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R02",
+   "atteso": {
+    "reparto": "salesforce",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "salesforce",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1451.6133799916133,
+   "token_generati": 29,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R03",
+   "atteso": {
+    "reparto": "salesforce",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "salesforce",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1412.4007659847848,
+   "token_generati": 29,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R04",
+   "atteso": {
+    "reparto": "salesforce",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "salesforce",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1465.0360490195453,
+   "token_generati": 29,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R05",
+   "atteso": {
+    "reparto": "salesforce",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "predetto": {
+    "reparto": "salesforce",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "ms": 1337.1931439614855,
+   "token_generati": 31,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R06",
+   "atteso": {
+    "reparto": "salesforce",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "salesforce",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "ms": 1439.3328370060772,
+   "token_generati": 29,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R07",
+   "atteso": {
+    "reparto": "salesforce",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "salesforce",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "ms": 1397.5332340341993,
+   "token_generati": 29,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R08",
+   "atteso": {
+    "reparto": "salesforce",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "salesforce",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1461.7325199651532,
+   "token_generati": 29,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R09",
+   "atteso": {
+    "reparto": "salesforce",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "salesforce",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1317.4923769547604,
+   "token_generati": 29,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R10",
+   "atteso": {
+    "reparto": "salesforce",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "predetto": {
+    "reparto": "salesforce",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "ms": 1399.2860629805364,
+   "token_generati": 29,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R11",
+   "atteso": {
+    "reparto": "m365",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "predetto": {
+    "reparto": "m365",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "ms": 1554.3216899968684,
+   "token_generati": 33,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R12",
+   "atteso": {
+    "reparto": "m365",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "m365",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1587.4256460228935,
+   "token_generati": 31,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R13",
+   "atteso": {
+    "reparto": "m365",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "m365",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1587.8549290355295,
+   "token_generati": 31,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R14",
+   "atteso": {
+    "reparto": "m365",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "predetto": {
+    "reparto": "m365",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "ms": 1532.865061017219,
+   "token_generati": 31,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R15",
+   "atteso": {
+    "reparto": "m365",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "m365",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1574.4848329923116,
+   "token_generati": 31,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R16",
+   "atteso": {
+    "reparto": "m365",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "predetto": {
+    "reparto": "m365",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "ms": 1559.623914945405,
+   "token_generati": 33,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R17",
+   "atteso": {
+    "reparto": "m365",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "m365",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "ms": 1586.2876399769448,
+   "token_generati": 31,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R18",
+   "atteso": {
+    "reparto": "m365",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "m365",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1573.968850017991,
+   "token_generati": 31,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R19",
+   "atteso": {
+    "reparto": "m365",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "m365",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "ms": 1612.425576953683,
+   "token_generati": 31,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R20",
+   "atteso": {
+    "reparto": "m365",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "m365",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "ms": 1516.526803956367,
+   "token_generati": 31,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R21",
+   "atteso": {
+    "reparto": "report",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "predetto": {
+    "reparto": "report",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "ms": 1357.4527410091832,
+   "token_generati": 28,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R22",
+   "atteso": {
+    "reparto": "report",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "report",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "ms": 1449.4663850055076,
+   "token_generati": 28,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R23",
+   "atteso": {
+    "reparto": "report",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "report",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "ms": 1340.656721033156,
+   "token_generati": 28,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R24",
+   "atteso": {
+    "reparto": "report",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "report",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "ms": 1452.9669240000658,
+   "token_generati": 27,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R25",
+   "atteso": {
+    "reparto": "report",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "report",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "ms": 1541.839892975986,
+   "token_generati": 28,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R26",
+   "atteso": {
+    "reparto": "report",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "predetto": {
+    "reparto": "report",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "ms": 1461.5257300320081,
+   "token_generati": 30,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R27",
+   "atteso": {
+    "reparto": "report",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "report",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "ms": 1480.026004021056,
+   "token_generati": 28,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R28",
+   "atteso": {
+    "reparto": "report",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "report",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1371.1643089773133,
+   "token_generati": 28,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R29",
+   "atteso": {
+    "reparto": "report",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "predetto": {
+    "reparto": "report",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "ms": 1470.726789033506,
+   "token_generati": 30,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R30",
+   "atteso": {
+    "reparto": "report",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "report",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "ms": 1532.4846160365269,
+   "token_generati": 31,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R31",
+   "atteso": {
+    "reparto": "it",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "predetto": {
+    "reparto": "it",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "ms": 1439.2800770001486,
+   "token_generati": 30,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R32",
+   "atteso": {
+    "reparto": "it",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "it",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1517.8987410035916,
+   "token_generati": 28,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R33",
+   "atteso": {
+    "reparto": "it",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "predetto": {
+    "reparto": "it",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "ms": 1444.4809560081922,
+   "token_generati": 30,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R34",
+   "atteso": {
+    "reparto": "it",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "it",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "ms": 1514.53196501825,
+   "token_generati": 28,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R35",
+   "atteso": {
+    "reparto": "it",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "it",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "ms": 1414.4885300192982,
+   "token_generati": 28,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R36",
+   "atteso": {
+    "reparto": "it",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "it",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "ms": 1343.8998570200056,
+   "token_generati": 28,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R37",
+   "atteso": {
+    "reparto": "it",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "predetto": {
+    "reparto": "it",
+    "tipo": "guasto",
+    "urgente": true
+   },
+   "ms": 1423.6687640077434,
+   "token_generati": 30,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R38",
+   "atteso": {
+    "reparto": "it",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "it",
+    "tipo": "domanda",
+    "urgente": false
+   },
+   "ms": 1391.567611019127,
+   "token_generati": 28,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R39",
+   "atteso": {
+    "reparto": "it",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "it",
+    "tipo": "guasto",
+    "urgente": false
+   },
+   "ms": 1392.176869965624,
+   "token_generati": 28,
+   "modello": "qwen3.5-1.9b-q8_0"
+  },
+  {
+   "id": "R40",
+   "atteso": {
+    "reparto": "it",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "predetto": {
+    "reparto": "it",
+    "tipo": "richiesta",
+    "urgente": false
+   },
+   "ms": 1490.6172929913737,
+   "token_generati": 28,
+   "modello": "qwen3.5-1.9b-q8_0"
+  }
+ ]
+}

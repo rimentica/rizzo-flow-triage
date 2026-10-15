@@ -1,0 +1,40 @@
+{"id": "R01", "testo": "Da stamattina quando salvo un'opportunità in Salesforce compare 'FIELD_CUSTOM_VALIDATION_EXCEPTION' e non riesco a chiudere l'ordine del cliente che scade oggi alle 17.", "reparto": "salesforce", "tipo": "guasto", "urgente": true}
+{"id": "R02", "testo": "Ciao, potreste aggiungere nel layout dell'account Salesforce un campo per il codice SAP del cliente? Non c'è fretta, quando riuscite.", "reparto": "salesforce", "tipo": "richiesta", "urgente": false}
+{"id": "R03", "testo": "Come faccio ad aggiungere dei contatti come membri di una campagna in Salesforce partendo da una vista elenco?", "reparto": "salesforce", "tipo": "domanda", "urgente": false}
+{"id": "R04", "testo": "Il nuovo collega dell'area commerciale Nord deve vedere gli account della sua zona in Salesforce: gli serve il profilo commerciale da lunedì.", "reparto": "salesforce", "tipo": "richiesta", "urgente": false}
+{"id": "R05", "testo": "Il Flow di approvazione delle campagne si è fermato: tutte le campagne di questa settimana sono bloccate in 'In approvazione' e il congresso parte domani mattina.", "reparto": "salesforce", "tipo": "guasto", "urgente": true}
+{"id": "R06", "testo": "In Salesforce non vedo più le chiamate registrate dall'app mobile da ieri, i colleghi dicono lo stesso. Non è bloccante, nel frattempo le registriamo da PC.", "reparto": "salesforce", "tipo": "guasto", "urgente": false}
+{"id": "R07", "testo": "Quando provo a registrare un'email in Salesforce con l'add-in di Outlook mi dice 'sessione scaduta' anche dopo aver rifatto il login.", "reparto": "salesforce", "tipo": "guasto", "urgente": false}
+{"id": "R08", "testo": "È possibile esportare in Excel i membri di una campagna Salesforce con lo stato della risposta?", "reparto": "salesforce", "tipo": "domanda", "urgente": false}
+{"id": "R09", "testo": "Mi serve un nuovo valore 'Congresso internazionale' nella picklist del tipo di campagna in Salesforce.", "reparto": "salesforce", "tipo": "richiesta", "urgente": false}
+{"id": "R10", "testo": "URGENTE: Salesforce mi dice 'utente disattivato' e oggi ho tre visite dai clienti da registrare, sono completamente fermo.", "reparto": "salesforce", "tipo": "guasto", "urgente": true}
+{"id": "R11", "testo": "Non riesco più ad aprire la cartella 'Gare 2026' sul sito SharePoint dell'ufficio gare: dice che non ho i permessi, fino a ieri funzionava. Dobbiamo caricare la documentazione della gara entro le 12 di oggi.", "reparto": "m365", "tipo": "guasto", "urgente": true}
+{"id": "R12", "testo": "Potete dare accesso in sola lettura al sito SharePoint 'Qualità' a un consulente esterno di un'azienda partner?", "reparto": "m365", "tipo": "richiesta", "urgente": false}
+{"id": "R13", "testo": "Come si condivide un file di OneDrive con un collega in modo che possa modificarlo ma non scaricarlo?", "reparto": "m365", "tipo": "domanda", "urgente": false}
+{"id": "R14", "testo": "Teams non mi fa entrare nelle riunioni da questa mattina: resta sulla schermata di caricamento. Ho la call con il distributore spagnolo tra mezz'ora.", "reparto": "m365", "tipo": "guasto", "urgente": true}
+{"id": "R15", "testo": "Vorrei creare un nuovo canale Teams per il progetto robotica con le persone del mio team.", "reparto": "m365", "tipo": "richiesta", "urgente": false}
+{"id": "R16", "testo": "La casella condivisa 'ordini' in Outlook non riceve email da ieri sera: gli ordini dei clienti si accumulano e tutto l'ufficio ordini è fermo.", "reparto": "m365", "tipo": "guasto", "urgente": true}
+{"id": "R17", "testo": "Qual è la differenza tra salvare un documento su OneDrive e su un sito SharePoint di reparto?", "reparto": "m365", "tipo": "domanda", "urgente": false}
+{"id": "R18", "testo": "Mi servirebbe una lista SharePoint per tenere traccia dei campioni gratuiti consegnati ai medici.", "reparto": "m365", "tipo": "richiesta", "urgente": false}
+{"id": "R19", "testo": "Quando sincronizzo la libreria documenti del sito SharePoint Marketing compaiono file duplicati con il nome del mio PC in fondo.", "reparto": "m365", "tipo": "guasto", "urgente": false}
+{"id": "R20", "testo": "Come faccio a recuperare una versione precedente di un file Word salvato su SharePoint?", "reparto": "m365", "tipo": "domanda", "urgente": false}
+{"id": "R21", "testo": "La dashboard Power BI delle vendite mensili si ferma ai dati di venerdì scorso e oggi pomeriggio la direzione la usa per la riunione di budget.", "reparto": "report", "tipo": "guasto", "urgente": true}
+{"id": "R22", "testo": "Potreste aggiungere alla dashboard Power BI delle vendite un filtro per area geografica?", "reparto": "report", "tipo": "richiesta", "urgente": false}
+{"id": "R23", "testo": "Il report Excel automatico che ricevo ogni mattina via email oggi è arrivato vuoto, senza righe.", "reparto": "report", "tipo": "guasto", "urgente": false}
+{"id": "R24", "testo": "Come si esporta una tabella da Power BI in Excel mantenendo i filtri applicati?", "reparto": "report", "tipo": "domanda", "urgente": false}
+{"id": "R25", "testo": "Per il forecast di fine anno mi servirebbe un'estrazione da SAP BW del fatturato per prodotto degli ultimi tre anni.", "reparto": "report", "tipo": "richiesta", "urgente": false}
+{"id": "R26", "testo": "In SAP Analytics Cloud il piano di budget non salva le modifiche e dà un errore generico; la consegna del budget al controllo di gestione è oggi alle 18.", "reparto": "report", "tipo": "guasto", "urgente": true}
+{"id": "R27", "testo": "Vorrei capire da quale fonte viene il fatturato nel report Power BI delle vendite: è lo stesso dato di SAP BW?", "reparto": "report", "tipo": "domanda", "urgente": false}
+{"id": "R28", "testo": "Mi servirebbe ricevere anche io ogni mattina il report Excel delle giacenze di magazzino che arriva alla logistica.", "reparto": "report", "tipo": "richiesta", "urgente": false}
+{"id": "R29", "testo": "Tutti i report Power BI condivisi con l'area vendite mostrano 'impossibile caricare il modello' da stamattina: venti persone non riescono a lavorare.", "reparto": "report", "tipo": "guasto", "urgente": true}
+{"id": "R30", "testo": "Il grafico delle visite per area nella dashboard Power BI mostra la Sardegna due volte.", "reparto": "report", "tipo": "guasto", "urgente": false}
+{"id": "R31", "testo": "Il mio portatile non si accende più e ho la presentazione al cliente tra un'ora.", "reparto": "it", "tipo": "guasto", "urgente": true}
+{"id": "R32", "testo": "Mi serve un secondo monitor per la postazione in amministrazione.", "reparto": "it", "tipo": "richiesta", "urgente": false}
+{"id": "R33", "testo": "La VPN non si collega da casa: errore 'gateway non raggiungibile'. Oggi sono in smart working e non posso accedere a nessuna applicazione.", "reparto": "it", "tipo": "guasto", "urgente": true}
+{"id": "R34", "testo": "Come si collega la stampante del secondo piano al mio PC?", "reparto": "it", "tipo": "domanda", "urgente": false}
+{"id": "R35", "testo": "La stampante dell'ufficio acquisti stampa tutte le pagine con delle righe grigie.", "reparto": "it", "tipo": "guasto", "urgente": false}
+{"id": "R36", "testo": "Potete installare 7-Zip sul mio PC? Mi arrivano spesso archivi compressi dai fornitori.", "reparto": "it", "tipo": "richiesta", "urgente": false}
+{"id": "R37", "testo": "Il mio account Windows risulta bloccato dopo l'aggiornamento di stanotte e non riesco a entrare nel PC; devo inviare gli ordini entro mezzogiorno.", "reparto": "it", "tipo": "guasto", "urgente": true}
+{"id": "R38", "testo": "Qual è la procedura per avere un telefono aziendale nuovo quando il mio è vecchio?", "reparto": "it", "tipo": "domanda", "urgente": false}
+{"id": "R39", "testo": "Il Wi-Fi della sala riunioni grande cade ogni pochi minuti.", "reparto": "it", "tipo": "guasto", "urgente": false}
+{"id": "R40", "testo": "Al nuovo stagista che arriva lunedì servono un PC e l'account di rete.", "reparto": "it", "tipo": "richiesta", "urgente": false}
