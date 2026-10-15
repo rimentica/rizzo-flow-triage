@@ -162,7 +162,8 @@ misura un motore alla volta.
 
 ## Possibili passi successivi
 
-- Proporre a rizzo-flow la modifica `RIZZO_LLAMA_LOAD_MODE`.
+- Portare il load mode in rizzo-flow come opzione `--load-mode` invece che
+  come patch: proposto in [rizzo-flow#31](https://github.com/Rizzo-AI-Academy/rizzo-flow/issues/31), in attesa del maintainer.
 - Rendere piu' affidabile l'urgenza con istruzioni piu' precise, oppure
   calibrare le probabilita' su richieste etichettate.
 - Provare il modello rizzo-flow piu' piccolo per la latenza.

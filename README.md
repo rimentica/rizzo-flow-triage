@@ -162,7 +162,8 @@ measure one engine at a time.
 
 ## Possible next steps
 
-- Propose the `RIZZO_LLAMA_LOAD_MODE` change to rizzo-flow.
+- Expose the load mode in rizzo-flow as a `--load-mode` option instead of a
+  patch: proposed in [rizzo-flow#31](https://github.com/Rizzo-AI-Academy/rizzo-flow/issues/31), waiting for the maintainer.
 - Make urgency more reliable with sharper instructions, or calibrate the
   probabilities on labelled requests.
 - Try the smaller rizzo-flow model for latency.
